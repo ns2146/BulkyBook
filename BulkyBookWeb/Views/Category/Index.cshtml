@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Category>
+﻿@using BulkyBook.Models
+@model IEnumerable<Category>
 @{
     ViewData["Title"] = "Index";
 }
@@ -64,7 +65,7 @@
                             &nbsp; Edit
                         </a>
 
-                        <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-primary">
+                        <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger">
                            <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 width="16" 
